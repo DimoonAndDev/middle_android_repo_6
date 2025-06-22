@@ -1,4 +1,4 @@
-package ru.yandexpraktikum.notekeeper.di.scopes
+package ru.yandexpraktikum.add_note.di
 
 import jakarta.inject.Scope
 

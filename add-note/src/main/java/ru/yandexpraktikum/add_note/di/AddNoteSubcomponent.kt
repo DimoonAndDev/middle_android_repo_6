@@ -1,9 +1,7 @@
-package ru.yandexpraktikum.notekeeper.di
+package ru.yandexpraktikum.add_note.di
 
 import dagger.Subcomponent
-import ru.yandexpraktikum.add_note.di.AddNoteModule
 import ru.yandexpraktikum.add_note.presentation.AddNoteViewModelFactory
-import ru.yandexpraktikum.notekeeper.di.scopes.AddNoteScope
 
 @AddNoteScope
 @Subcomponent(modules = [AddNoteModule::class])
@@ -12,6 +10,6 @@ interface AddNoteSubcomponent {
 
     @Subcomponent.Factory
     interface Factory{
-        fun create():AddNoteSubcomponent
+        fun create(): AddNoteSubcomponent
     }
 }
